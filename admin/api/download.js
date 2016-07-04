@@ -78,7 +78,7 @@ exports = module.exports = function(req, res) {
 			});
 			
 			res.write(new Buffer('EFBBBF', 'hex'));
-			res.end(content, 'utf-8');
+			res.end(content, 'utf-16le');
 		};
 
 		if (!results.length) {
